@@ -20,7 +20,10 @@ document.onkeyup = function () {
 
     if (userGuess === computerChoice) {
         wins++;
-        alert("True Winner!")
+        alert("True Winner!");
+        guessesLeft = 9;
+		guessesSoFar = [];
+		computerChoice = cpuChoose[Math.floor(Math.random() * cpuChoose.length)];
     }
     else {
         guessesLeft--;
@@ -29,6 +32,9 @@ document.onkeyup = function () {
     if (guessesLeft = 0) {
         losses++;
         alert("Take the L!");
+        guessesLeft = 9;
+		guessesSoFar = [];
+		computerChoice = cpuChoose[Math.floor(Math.random() * cpuChoose.length)];
     }
 }
 
