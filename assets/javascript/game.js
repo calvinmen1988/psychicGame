@@ -33,8 +33,6 @@ document.onkeyup = function() {
                 
 
         
-
-        
 //Counts are update
 
 function display () {
